@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <title>Foryou</title>
+  </head>
+  <body class="bg-[#0F0F0F] px-4 pt-16">
+    <main>
+      <section>
+        <span
+          class="scroll-btn flex flex-col absolute justify-center left-0 right-0 text-center">
+          <div href="#">
+            <span class="mouse">
+              <span> </span>
+            </span>
+          </div>
+          <p class="text-3xl">scroll me</p>
+        </span>
+        <p class="text-white text-2xl py-36">
+          How your dayy, capek ya? mari lihat beberapa cuplikan meme dibawah
+          ini, sebelum menuju konten utama
+        </p>
+        <div class="flex flex-col gap-4">
+          <img
+            src="img/1.webp"
+            alt="Ini meme"
+            class="w-full h-full" />
+          <img
+            src="img/2.jpg"
+            alt="Ini meme"
+            class="w-full h-full" />
+          <img
+            src="img/3.jpeg"
+            alt="Ini meme"
+            class="w-full h-full" />
+          <img
+            src="img/4.jpeg"
+            alt="Ini meme"
+            class="w-full h-full" />
+          <img
+            src="img/5.jpg"
+            alt="Ini meme"
+            class="w-full h-full" />
+          <img
+            src="img/6.jpg"
+            alt="Ini meme"
+            class="w-full h-full" />
+        </div>
+        <div class="py-8 px-4 text-white">
+          <p class="text-white text-3xl py-8">
+            Sekarang mari lihat jokes bapack-bapack
+          </p>
+          <p class="text-2xl">Tau ga cara menghilangkan stress?</p>
+          <ol class="list-decimal">
+            <li>Beli kacang</li>
+            <li>genggam kacangnya</li>
+            <li>Lepaskannn</li>
+          </ol>
+          <p>Karena melepas peanut xixixi</p>
+          <br />
+          <br />
+
+          <hr />
+          <br />
+          <br />
+          <p>Bagian tubuh mana yang dinginnn?</p>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <p class="text-3xl">Dengcoool</p>
+          <br />
+          <br />
+          <br />
+          <img
+            src="img/7.jpeg"
+            alt="Ini meme"
+            class="w-full h-full" />
+        </div>
+        <div>
+          <br />
+          <br />
+          <br />
+          <p class="text-4xl text-white">Oke CUKUP SUDAH MELUCUNYA.</p>
+          <br />
+          <p class="text-white">
+            i think, we need talk a lot, lets say like a date or just talk
+            maybe(?)
+          </p>
+          <p>Kalau misalkan lu mauu, silahkan pencet tombol dibawah iniiii</p>
+          <div class="flex flex-col gap-4">
+            <div
+              id="mau"
+              class="bg-red-600 p-4 rounded-md w-10/12 flex justify-center text-white cursor-pointer">
+              <a
+                href="https://api.whatsapp.com/send?phone=6289675293838&text=Selamat%20Malam,%20saya%20dari%20agen%20asuransi"
+                target="_blank"
+                class="text-2xl"
+                >YAAA SAYA MAUUU!!!!</a
+              >
+            </div>
+          </div>
+          <button
+            id="gamau"
+            onclick="gamau(this)"
+            class="bg-yellow-600 p-4 rounded-md w-10/12 flex justify-center text-white cursor-pointer absolute">
+            NGGA MAU!
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    const gamau = (id) => {
+      let mau = document.getElementById('mau');
+      let i = Math.floor(Math.random() * 300) + 1;
+      let j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + 'px';
+      id.style.top = j + 'px';
+    };
+  </script>
+</html>
